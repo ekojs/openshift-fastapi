@@ -5,4 +5,4 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"Hello": os.getenv("HOSTNAME")}
+    return {"message": os.getenv("HOSTNAME")}
